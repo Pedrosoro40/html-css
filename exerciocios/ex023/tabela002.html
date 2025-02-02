@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -21,10 +22,10 @@
             background-color: #383838;
             color: white;
         }
-        thead > tr > th { 
+        thead > tr > th { /*cabeçalho fixo*/
             position: sticky;
             top: -1px;
-            background-color: gray;
+            background-color: #383838;
         }
         tbody > tr:nth-child(2n) { /*recurso zebrado*/
             background-color: lightgray;
