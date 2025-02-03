@@ -4,21 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border: 1px solid black;
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: rgb(228, 228, 228);           
+        }
+        th {
+            background-color: gray;
+            color: white;
+        }
+        
+
+    </style>
 </head>
 <body>
     <table>
-        <caption>
-
-        </caption>
         <tbody>
             <tr>
-                <th>Área</th>
-                <th>Diciplinas</th>
-                <th>Notas</th>
-                <th>Media</th>
+                <th scope="col" >Área</th>
+                <th scope="col">Diciplinas</th>
+                <th colspan="2" scope="colgroup" style="width: 200px;">Notas</th>                
+                <th scope="col">Media</th>
             </tr>
             <tr>
-                <th>Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matematica</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -43,10 +66,11 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th>Médias de Exatas</th>
+                <th colspan="4" scope="row">Médias de Exatas</th>
+                <td>0.0</td>
             </tr>
             <tr>
-                <th>Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>Historia</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -59,12 +83,10 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th >Médias de Humanas</th>
+                <th colspan="4" scope="row">Médias de Humanas</th>
+                <td>0.0</td>
             </tr>
         </tbody>
-        <tfoot>
-
-        </tfoot>
-    </table>
+        </table>
 </body>
 </html>
