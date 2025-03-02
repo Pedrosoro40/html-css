@@ -15,19 +15,27 @@
             background-color: lightseagreen;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 250px;
+            flex-basis: 200px;         
+        }
+        #cxA {
             flex-shrink: 1;
-            flex-grow: 1;
-           
-            
+            flex-grow: 0;
+        }
+        #cxB {
+           flex-shrink: 1;
+           flex-grow: 4; 
+        }
+        #cxC {
+            flex-shrink: 1;
+            flex-grow: 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
         
     </div>
 </body>
